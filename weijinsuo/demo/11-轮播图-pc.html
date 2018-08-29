@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+
+    <title>PC轮播图</title>
+
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .pc_imageBox {
+            display: block;
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('../images/slide_01_2000x410.jpg')
+        }
+        /* 使用css选择器来设置不同背景不太好 不利于维护 */
+    </style>
+</head>
+<body>
+    <!--轮播图-->
+    <section class="wjs_banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- 点盒子 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="" class="pc_imageBox" style="background-image: url('../images/slide_01_2000x410.jpg')"></a>
+                  
+                </div>
+                <div class="item">
+                    <a href="" class="pc_imageBox" style="background-image: url('../images/slide_02_2000x410.jpg')"></a>
+                    
+                </div>
+                <div class="item">
+                    <a href="" class="pc_imageBox" style="background-image: url('../images/slide_03_2000x410.jpg')"></a>
+                    
+                </div>
+                <div class="item">
+                   <a href="" class="pc_imageBox" style="background-image: url('../images/slide_04_2000x410.jpg')"></a>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic"  data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </section>
+<!-- bootstrap依赖jquery-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../lib/jquery/jquery.min.js"></script>
+<!-- bootstrap js 核心文件-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    window.onload = function(argument) {
+        
+
+    }
+</script>
+</body>
+</html>

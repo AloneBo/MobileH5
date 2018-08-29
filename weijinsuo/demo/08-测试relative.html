@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1 {
+			width: 400px;
+			height: 600px;
+			background: pink;
+
+			left: 600px;
+			/* 相对定位 脱离文档流 占位 之前的位置也占领 
+				设置了fixed absolute float会使元素具有行内块元素特点
+			*/
+			position: relative;
+		}
+
+
+		.box2 {
+			width: 300px;
+			height: 600px;
+			background: blue;
+			/* 相对定位找的是根据 设置了定位且不是static的父容器作为参考 */
+			position: absolute;
+		}
+	
+	</style>
+</head>
+<body>
+	<span class="box1">
+		
+	</div>
+	<span>
+		span元素
+	</span>
+	<div class="box2">
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background position</title>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		a {
+			display: block;
+			margin-left: 10px;
+			border: 2px solid #ccc;
+			margin-bottom: 10px;
+		}
+		.a_first {
+			display: block;
+			width: 640px;
+			height: 340px;
+			background-image: url('../images/slide_01_640x340.jpg');
+		}
+
+		.a_second {
+			display: block;
+			width: 320px;
+			height: 120px;
+			/* 第一个表示垂直方向 第二个表示水平方向
+				第一个参数只能是 top bottom center
+				第二个参数只能是 left right center
+			 */
+			background-position: center left;
+			/* background-size: cover;  */
+			/* background-repeat: no-repeat; */
+			/* background-clip 指定背景绘制区域
+				border-box	默认值。背景绘制在边框方框内（剪切成边框方框）。
+				padding-box	背景绘制在衬距方框内（剪切成衬距方框）。
+				content-box	背景绘制在内容方框内（剪切成内容方框）。
+			 */
+			padding: 20px;
+			border: 10px dashed green;
+			background-clip: content-box; 
+
+			background-image: url('../images/slide_01_640x340.jpg');
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<a class="a_first" href="" src=""></a>
+	</div>
+
+	<div class="box">
+		<a class="a_second" href="" src=""></a>
+	</div>
+</body>
+</html>

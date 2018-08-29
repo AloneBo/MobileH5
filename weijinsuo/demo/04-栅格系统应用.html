@@ -1,0 +1,60 @@
+<!--h5文档申明-->
+<!DOCTYPE html>
+<!--文档语言申明  en zh-CN zh-tw -->
+<html lang="zh-CN">
+<head>
+    <!--文档编码申明-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>title</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .container{
+            height: 100px;
+            background: pink;
+        }
+        .container > .row{
+            height: 50px;
+            background: green;
+        }
+        .container > .row > div{
+            height: 25px;
+            background: red;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <!--
+        col：列样式
+        第一个*：屏幕的大小
+        大屏设备     lg   大屏设备以上生效包含本身
+        中屏设备     md   中屏设备以上生效包含本身
+        小屏设备     sm   小屏设备以上生效包含本身
+        超小屏设备   xs   超小屏设备以上生效包含本身
+        第二个*：每一行的分等份，默认分成12等份 ，数字代表的是占多少份
+    -->
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+    </div>
+    
+</div>
+
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

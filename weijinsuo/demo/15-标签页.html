@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+
+    <title>mobile 轮播图</title>
+
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .m_imageBox {
+            width: 100%;
+            display: block;
+        }
+
+        .m_imageBox img {
+            width: 100%;
+            display: block;
+        }
+        /* 使用css选择器来设置不同背景不太好 不利于维护 */
+    </style>
+</head>
+<body>
+    <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+          <li  class="active"> <a href="#home"  data-toggle="tab">Home</a></li>
+          <li><a href="#profile"  data-toggle="tab">Profile</a></li>
+          <li><a href="#messages"   data-toggle="tab">Messages</a></li>
+          <li><a href="#settings"  data-toggle="tab">Settings</a></li>
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">1</div>
+          <div  class="tab-pane" id="profile">2</div>
+          <div  class="tab-pane" id="messages">3</div>
+          <div  class="tab-pane" id="settings">4</div>
+        </div>
+      
+      </div>
+<!-- bootstrap依赖jquery-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../lib/jquery/jquery.min.js"></script>
+<!-- bootstrap js 核心文件-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    window.onload = function(argument) {
+        
+
+    }
+</script>
+</body>
+</html>

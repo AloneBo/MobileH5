@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			height: 40px;
+			width: 160px;
+			background: green;
+			text-align: center;
+		}
+
+		img {
+			/* img跟除了不会自动换行显示 宽高 内边距外边距和块级元素一致 */
+			/* 所以 img  input  select  textarea  button  label 等，他们被称为可置换元素（Replaced element）。 */
+			/* block 那么不管是否有空余位置 都不会掉下来 */
+			/* img设置为block之后 不受text-align控制 */
+			/* display: block; */
+			border: 1px solid red;
+			margin: 10px 10px;
+			padding: 4px 4px;
+			width: 60px;
+			height: 10px;
+		}
+
+		span {
+			/* 行内元素padding,margin上下不起作用 但是设置padding能撑大自己 */
+			border: 1px solid red;
+			margin: 10px 10px;
+			padding: 4px 4px;
+			width: 60px;
+			height: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<span>sajdhjas</span>
+		<img src="../images/code.jpg" alt="">
+	</div>
+</body>
+</html>
