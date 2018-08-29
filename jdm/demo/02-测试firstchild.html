@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/* 无效选择器 因为第一个元素是li */
+		.content1 ul:first-child {
+
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="content2">
+		<ul >
+			<li>sd</li>
+			<li>sd</li>
+			<li>s</li>
+		</ul>
+
+		<ul >
+			<li>df</li>
+			<li>df</li>
+			<li>df</li>
+		</ul>
+	</div>
+
+	<div class="content1">
+		<li>
+			haha
+		</li>
+
+		<ul >
+			<li>sd</li>
+			<li>sd</li>
+			<li>s</li>
+		</ul>
+
+		<ul >
+			<li>df</li>
+			<li>df</li>
+			<li>df</li>
+		</ul>
+	</div>
+</body>
+</html>

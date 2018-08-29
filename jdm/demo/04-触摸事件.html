@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>触摸事件</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.box {
+			width: 200px;
+			height: 200px;
+			background:  pink;
+		}
+	</style>
+</head>
+<body>
+	<!-- 使用touch -->
+	<div class="box">
+		
+	</div>
+
+<script>
+	window.onload = function() {
+		// PC无效
+		var box = document.querySelector('.box')
+		// 刚刚准备触摸时候按下的时候
+		box.addEventListener('touchstart', function() {
+			console.log('start')
+		})
+		box.addEventListener('touchmove', function() {
+			console.log('move')
+		})
+		box.addEventListener('touchend', function() {
+			console.log('end')
+		})
+	}
+</script>
+</body>
+</html>
