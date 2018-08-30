@@ -15,5 +15,7 @@ node server.js [项目路径(index.html所在目录)]
 Linux:
 cd node_modules/simple-express-static-server
 node server.js [项目路径(index.html所在目录)]
+
+然后根据提示网址在浏览器打开
 ```
 
