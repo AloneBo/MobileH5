@@ -7,6 +7,7 @@
 
 ## 运行
 * 如果以file://协议打开显示不全请用WebStorm或者静态服务器打开
+* VSCode里安装插件`Live Server` 右键以`LiveServer`运行
 * 在node_modules文件夹中也安装了一个node静态服务器模块
 ```shell
 Windows:
